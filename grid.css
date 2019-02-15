@@ -1,16 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  background-color: white;
-  color: black;
   font: normal 24px Helvetica, Arial, sans-serif;
 }
 
-header,
-h1 {
+header, h1 {
   background-color: blue;
   color: white;
 }
@@ -26,13 +18,11 @@ nav {
 
 ul {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
 }
 
 li {
   text-align: center;
-  width: 20%;
+  width: auto;
 }
 
 a {
@@ -49,22 +39,21 @@ a:hover {
   color: yellow;
 }
 
-main {
-  display: flex;
-}
-
 article,
 aside {
   padding: 0 1rem;
 }
 
-article {
-  flex: 2;
-}
-
 aside {
   background-color: lightgreen;
-  flex: 1;
+}
+
+#aside-3 {
+  background-color: pink;
+}
+
+#article-2 {
+  background-color: skyblue;
 }
 
 p {
@@ -73,23 +62,12 @@ p {
 
 footer {
   background-color: yellow;
-  display: flex;
-  justify-content: space-between;
 }
 
 #copyright {
-  display: flex;
-  align-items: center;
   margin: 0 1rem;
-  order: 2;
 }
 
 #logo {
   background-color: orange;
-  order: 1;
-}
-
-#logo img {
-  display: block;
-  height: 200px;
 }
