@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 500px;
+  width: 100%;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+img {
+  display: block;
+  border: 1rem solid white;
+  width: 100%;
+}
+
+figure {
+  padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.gallery img {
+  display: block;
+  border: 0.4rem solid white;
+  width: 100%;
+  flex: 1;
+}
