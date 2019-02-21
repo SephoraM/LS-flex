@@ -23,7 +23,6 @@ main {
   flex-flow: column nowrap;
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 500px;
   width: 100%;
 }
 
@@ -56,4 +55,19 @@ figure {
   border: 0.4rem solid white;
   width: 100%;
   flex: 1;
+}
+
+/*Add a media query with the CSS you need to limit the number of thumbnails per
+line to three when the window width is less than 900px.*/
+
+@media screen and (max-width: 899px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
